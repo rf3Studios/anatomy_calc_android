@@ -1,0 +1,65 @@
+<resources>
+
+    <!-- General Labels -->
+    <string name="app_name">Anatomy Grade Calculator</string>
+    <string name="title_main">Main</string>
+
+    <!-- Default Display Values -->
+    <string name="default_letter_grade_val">A</string>
+    <string name="default_exam_grade_val">100.0</string>
+    <string name="default_quiz_grade_val_10">10</string>
+    <string name="default_quiz_grade_val_12">12</string>
+    <string name="default_quiz_max_val_10">/10</string>
+    <string name="default_quiz_max_val_12">/12</string>
+    <string name="default_attendance_val">0</string>
+
+    <!-- Settings Labels -->
+    <string name="action_settings">Settings</string>
+
+    <!-- General Lecture Labels -->
+    <string name="title_main_lecture">Lecture</string>
+
+    <!-- Lecture Exam Labels -->
+    <string name="title_sub_lec_exams">Exams</string>
+    <string name="label_lec_exam_1">Exam 1</string>
+    <string name="label_lec_exam_2">Exam 2</string>
+    <string name="label_lec_exam_3">Exam 3</string>
+    <string name="label_lec_exam_4">Exam 4</string>
+    <string name="label_lec_exam_final">Final Exam</string>
+
+    <!-- Lecture Quiz Labels -->
+    <string name="title_sub_lec_quizzes">Quizzes</string>
+    <string name="label_lec_quiz_1">Quiz 1</string>
+    <string name="label_lec_quiz_2">Quiz 2</string>
+    <string name="label_lec_quiz_3">Quiz 3</string>
+    <string name="label_lec_quiz_4">Quiz 4</string>
+    <string name="label_lec_quiz_5">Quiz 5</string>
+    <string name="label_lec_quiz_6">Quiz 6</string>
+    <string name="label_lec_quiz_7">Quiz 7</string>
+    <string name="label_lec_quiz_8">Quiz 8</string>
+    <string name="label_lec_quiz_9">Quiz 9</string>
+    <string name="label_lec_quiz_10">Quiz 10</string>
+    <string name="label_lec_quiz_11">Quiz 11</string>
+
+    <!-- Lecture Attendance Labels -->
+    <string name="title_sub_lec_attendance">Attendance</string>
+    <string name="label_lec_days_missed">Days Missed</string>
+
+    <!-- General Lab Labels -->
+    <string name="title_main_lab">Lab</string>
+
+    <!-- Lab Exam Labels -->
+    <string name="title_sub_lab_exams">Exams</string>
+    <string name="label_lab_exam_1">Exam 1</string>
+    <string name="label_lab_exam_2">Exam 2</string>
+    <string name="label_lab_exam_3">Exam 3</string>
+    <string name="label_lab_exam_final">Final Exam</string>
+    <!-- Lab Participation Labels -->
+    <string name="title_sub_lab_participation">Participation</string>
+    <string name="label_lab_participation">Participation</string>
+
+    <!-- Lab Attendance Labels -->
+    <string name="title_sub_lab_attendance">Attendance</string>
+    <string name="label_lab_days_missed">Days Missed</string>
+
+</resources>

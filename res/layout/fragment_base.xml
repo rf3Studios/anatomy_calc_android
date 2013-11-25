@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BaseActivity">
+
+    <TextView
+        android:text="Grade Information"
+        android:id="@+id/textViewMainHeader"
+        style="@style/MainGradeHeaders"/>
+
+    <TextView
+        android:id="@+id/textViewLabelNumGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Grade Total:"
+        android:textSize="16sp"
+        android:layout_below="@+id/textViewMainHeader"
+        android:layout_alignLeft="@+id/textViewMainHeader"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="8dp"/>
+
+    <TextView
+        android:id="@+id/textViewNumGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/default_exam_grade_val"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@id/textViewLabelNumGrade"
+        android:layout_toRightOf="@+id/textViewLabelNumGrade"/>
+
+    <TextView
+        android:id="@+id/textViewLabelLetterGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Letter Grade:"
+        android:textSize="16sp"
+        android:layout_alignLeft="@+id/textViewLabelNumGrade"
+        android:layout_below="@+id/textViewLabelNumGrade"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="8dp"/>
+
+    <TextView
+        android:id="@+id/textViewLetterGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/default_letter_grade_val"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@id/textViewLabelLetterGrade"
+        android:layout_toRightOf="@+id/textViewLabelLetterGrade"/>
+
+    <TextView
+        android:id="@+id/textViewLabelGradeScale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grading Scale"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textViewLabelLetterGrade"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/textViewGradeScaleA"
+        android:text="89.50 - 100.0 = A"
+        android:layout_below="@+id/textViewLabelGradeScale"
+        style="@style/MainGradeScaleText"/>
+
+    <TextView
+        android:id="@+id/textViewGradeScaleBP"
+        android:text="88.50 - 89.49 = B+"
+        android:layout_below="@+id/textViewGradeScaleA"
+        style="@style/MainGradeScaleText"/>
+
+    <TextView
+        android:id="@+id/textViewGradeScaleB"
+        android:text="79.50 - 88.49 = B"
+        android:layout_below="@+id/textViewGradeScaleBP"
+        style="@style/MainGradeScaleText"/>
+
+    <TextView
+        android:id="@+id/textViewGradeScaleCP"
+        android:text="78.50 - 79.49 = C+"
+        android:layout_below="@+id/textViewGradeScaleB"
+        style="@style/MainGradeScaleText"/>
+
+    <TextView
+        android:id="@+id/textViewGradeScaleC"
+        android:text="69.50 - 78.49 = C"
+        android:layout_below="@+id/textViewGradeScaleCP"
+        style="@style/MainGradeScaleText"/>
+
+    <TextView
+        android:id="@+id/textViewGradeScaleDP"
+        android:text="68.50 - 69.49 = D+"
+        android:layout_below="@+id/textViewGradeScaleC"
+        style="@style/MainGradeScaleText"/>
+
+    <TextView
+        android:id="@+id/textViewGradeScaleD"
+        android:text="59.50 - 68.49 = D"
+        android:layout_below="@+id/textViewGradeScaleDP"
+        style="@style/MainGradeScaleText"/>
+
+    <TextView
+        android:id="@+id/textViewGradeScaleF"
+        android:text="00.00 - 59.50 = F"
+        android:layout_below="@+id/textViewGradeScaleD"
+        style="@style/MainGradeScaleText"/>
+
+</RelativeLayout>

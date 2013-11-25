@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            tools:context=".BaseActivity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:padding="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textViewMainHeader"
+            android:text="@string/title_main_lab"
+            style="@style/MainGradeHeaders"/>
+
+        <TextView
+            android:id="@+id/textViewExamsHeader"
+            android:text="@string/title_sub_lab_exams"
+            android:layout_below="@+id/textViewMainHeader"
+            android:layout_alignLeft="@id/textViewMainHeader"
+            style="@style/MainGradeSubHeaders"/>
+
+        <TextView
+            android:text="@string/label_lab_exam_1"
+            android:layout_alignBaseline="@+id/editTextLabExam1"
+            android:layout_alignRight="@+id/textViewLabelFinalExam"
+            style="@style/MainGradeText"/>
+
+        <TextView
+            android:text="@string/label_lab_exam_2"
+            android:layout_alignBaseline="@+id/editTextLabExam2"
+            android:layout_alignRight="@+id/textViewLabelFinalExam"
+            style="@style/MainGradeText"/>
+
+        <TextView
+            android:text="@string/label_lab_exam_3"
+            android:layout_alignBaseline="@+id/editTextLabExam3"
+            android:layout_alignRight="@+id/textViewLabelFinalExam"
+            style="@style/MainGradeText"/>
+
+        <EditText
+            android:id="@+id/editTextLabExam1"
+            android:hint="@string/default_exam_grade_val"
+            android:layout_below="@+id/textViewExamsHeader"
+            android:layout_alignLeft="@+id/editTextLabFinalExam"
+            style="@style/MainGradeEditText"/>
+
+        <EditText
+            android:id="@+id/editTextLabExam2"
+            android:hint="@string/default_exam_grade_val"
+            android:layout_below="@+id/editTextLabExam1"
+            android:layout_alignLeft="@+id/editTextLabFinalExam"
+            style="@style/MainGradeEditText"/>
+
+        <EditText
+            android:id="@+id/editTextLabExam3"
+            android:hint="@string/default_exam_grade_val"
+            android:layout_below="@+id/editTextLabExam2"
+            android:layout_alignLeft="@+id/editTextLabFinalExam"
+            style="@style/MainGradeEditText"/>
+
+        <TextView
+            android:id="@+id/textViewLabelFinalExam"
+            android:text="@string/label_lab_exam_final"
+            android:layout_alignLeft="@+id/textViewExamsHeader"
+            android:layout_alignBaseline="@id/editTextLabFinalExam"
+            android:layout_marginLeft="8dp"
+            android:textSize="14sp"
+            style="@style/MainGradeText"/>
+
+        <EditText
+            android:id="@+id/editTextLabFinalExam"
+            android:hint="@string/default_exam_grade_val"
+            android:layout_below="@+id/editTextLabExam3"
+            android:layout_toRightOf="@+id/textViewLabelFinalExam"
+            android:layout_marginLeft="8dp"
+            style="@style/MainGradeEditText"/>
+
+        <TextView
+            android:id="@+id/textViewParticipationHeader"
+            android:text="@string/title_sub_lab_participation"
+            android:layout_below="@+id/editTextLabFinalExam"
+            android:layout_alignLeft="@id/textViewMainHeader"
+            style="@style/MainGradeSubHeaders"/>
+
+        <TextView
+            android:text="@string/label_lab_participation"
+            android:layout_alignBaseline="@+id/editTextLabParticipation"
+            android:layout_alignRight="@+id/textViewLabelFinalExam"
+            android:textSize="14sp"
+            style="@style/MainGradeText"/>
+
+        <EditText
+            android:id="@+id/editTextLabParticipation"
+            android:hint="@string/default_exam_grade_val"
+            android:layout_below="@+id/textViewParticipationHeader"
+            android:layout_alignLeft="@+id/editTextLabFinalExam"
+            style="@style/MainGradeEditText"/>
+
+        <TextView
+            android:id="@+id/textViewAttendanceHeader"
+            android:text="@string/title_sub_lab_attendance"
+            android:layout_below="@+id/editTextLabParticipation"
+            android:layout_alignLeft="@id/textViewMainHeader"
+            style="@style/MainGradeSubHeaders"/>
+
+        <TextView
+            android:text="@string/label_lab_days_missed"
+            android:layout_alignBaseline="@+id/editTextLabAttendance"
+            android:layout_alignRight="@+id/textViewLabelFinalExam"
+            android:textSize="14sp"
+            style="@style/MainGradeText"/>
+
+        <EditText
+            android:id="@+id/editTextLabAttendance"
+            android:hint="@string/default_attendance_val"
+            android:layout_below="@+id/textViewAttendanceHeader"
+            android:layout_alignLeft="@+id/editTextLabFinalExam"
+            style="@style/LectureQuizGradeStyle"/>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            tools:context=".BaseActivity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:padding="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textViewMainHeader"
+            android:text="@string/title_main_lecture"
+            style="@style/MainGradeHeaders"/>
+
+        <TextView
+            android:id="@+id/textViewExamsHeader"
+            android:text="@string/title_sub_lec_exams"
+            android:layout_below="@+id/textViewMainHeader"
+            android:layout_alignLeft="@id/textViewMainHeader"
+            style="@style/MainGradeSubHeaders"/>
+
+        <TextView
+            android:text="@string/label_lec_exam_1"
+            android:layout_alignBaseline="@+id/editTextLecExam1"
+            android:layout_alignRight="@+id/textViewLabelFinalExam"
+            style="@style/MainGradeText"/>
+
+        <TextView
+            android:text="@string/label_lec_exam_2"
+            android:layout_alignBaseline="@+id/editTextLecExam2"
+            android:layout_alignRight="@+id/textViewLabelFinalExam"
+            style="@style/MainGradeText"/>
+
+        <TextView
+            android:text="@string/label_lec_exam_3"
+            android:layout_alignBaseline="@+id/editTextLecExam3"
+            android:layout_alignRight="@+id/textViewLabelFinalExam"
+            style="@style/MainGradeText"/>
+
+        <TextView
+            android:text="@string/label_lec_exam_4"
+            android:layout_alignBaseline="@+id/editTextLecExam4"
+            android:layout_alignRight="@+id/textViewLabelFinalExam"
+            style="@style/MainGradeText"/>
+
+        <EditText
+            android:id="@+id/editTextLecExam1"
+            android:hint="@string/default_exam_grade_val"
+            android:layout_below="@+id/textViewExamsHeader"
+            android:layout_alignLeft="@+id/editTextLecFinalExam"
+            style="@style/MainGradeEditText"/>
+
+        <EditText
+            android:id="@+id/editTextLecExam2"
+            android:hint="@string/default_exam_grade_val"
+            android:layout_below="@+id/editTextLecExam1"
+            android:layout_alignLeft="@+id/editTextLecExam1"
+            style="@style/MainGradeEditText"/>
+
+        <EditText
+            android:id="@+id/editTextLecExam3"
+            android:hint="@string/default_exam_grade_val"
+            android:layout_alignLeft="@+id/editTextLecExam1"
+            android:layout_below="@+id/editTextLecExam2"
+            style="@style/MainGradeEditText"/>
+
+        <EditText
+            android:id="@+id/editTextLecExam4"
+            android:hint="@string/default_exam_grade_val"
+            android:layout_below="@+id/editTextLecExam3"
+            android:layout_alignLeft="@+id/editTextLecExam1"
+            style="@style/MainGradeEditText"/>
+
+        <TextView
+            android:id="@+id/textViewLabelFinalExam"
+            android:text="@string/label_lec_exam_final"
+            android:layout_alignLeft="@+id/textViewExamsHeader"
+            android:layout_alignBaseline="@+id/editTextLecFinalExam"
+            android:layout_marginLeft="8dp"
+            style="@style/MainGradeText"/>
+
+        <EditText
+            android:id="@+id/editTextLecFinalExam"
+            android:hint="@string/default_exam_grade_val"
+            android:layout_below="@+id/editTextLecExam4"
+            android:layout_toRightOf="@+id/textViewLabelFinalExam"
+            android:layout_marginLeft="8dp"
+            style="@style/MainGradeEditText"/>
+
+        <TextView
+            android:id="@+id/textViewQuizHeader"
+            android:text="@string/title_sub_lec_quizzes"
+            android:layout_below="@+id/editTextLecFinalExam"
+            android:layout_alignLeft="@+id/textViewExamsHeader"
+            style="@style/MainGradeSubHeaders"/>
+
+        <!-- Lecture Quiz Text Labels -->
+
+        <TextView
+            android:text="@string/label_lec_quiz_1"
+            android:layout_alignRight="@+id/textViewLabelFinalExam"
+            android:layout_alignBaseline="@+id/editTextLecQuiz1"
+            style="@style/MainGradeText"/>
+
+        <TextView
+            android:text="@string/label_lec_quiz_2"
+            android:layout_alignRight="@+id/textViewLabelFinalExam"
+            android:layout_alignBaseline="@+id/editTextLecQuiz2"
+            style="@style/MainGradeText"/>
+
+        <TextView
+            android:text="@string/label_lec_quiz_3"
+            android:layout_alignRight="@+id/textViewLabelFinalExam"
+            android:layout_alignBaseline="@+id/editTextLecQuiz3"
+            style="@style/MainGradeText"/>
+
+        <TextView
+            android:text="@string/label_lec_quiz_4"
+            android:layout_alignRight="@+id/textViewLabelFinalExam"
+            android:layout_alignBaseline="@+id/editTextLecQuiz4"
+            style="@style/MainGradeText"/>
+
+        <TextView
+            android:text="@string/label_lec_quiz_5"
+            android:layout_alignRight="@+id/textViewLabelFinalExam"
+            android:layout_alignBaseline="@+id/editTextLecQuiz5"
+            style="@style/MainGradeText"/>
+
+        <TextView
+            android:text="@string/label_lec_quiz_6"
+            android:layout_alignRight="@+id/textViewLabelFinalExam"
+            android:layout_alignBaseline="@+id/editTextLecQuiz6"
+            style="@style/MainGradeText"/>
+
+        <TextView
+            android:text="@string/label_lec_quiz_7"
+            android:layout_alignRight="@+id/textViewLabelFinalExam"
+            android:layout_alignBaseline="@+id/editTextLecQuiz7"
+            style="@style/MainGradeText"/>
+
+        <TextView
+            android:text="@string/label_lec_quiz_8"
+            android:layout_alignRight="@+id/textViewLabelFinalExam"
+            android:layout_alignBaseline="@+id/editTextLecQuiz8"
+            style="@style/MainGradeText"/>
+
+        <TextView
+            android:text="@string/label_lec_quiz_9"
+            android:layout_alignRight="@+id/textViewLabelFinalExam"
+            android:layout_alignBaseline="@+id/editTextLecQuiz9"
+            style="@style/MainGradeText"/>
+
+        <TextView
+            android:text="@string/label_lec_quiz_10"
+            android:layout_alignRight="@+id/textViewLabelFinalExam"
+            android:layout_alignBaseline="@+id/editTextLecQuiz10"
+            style="@style/MainGradeText"/>
+
+        <TextView
+            android:text="@string/label_lec_quiz_11"
+            android:layout_alignRight="@+id/textViewLabelFinalExam"
+            android:layout_alignBaseline="@+id/editTextLecQuiz11"
+            style="@style/MainGradeText"/>
+
+        <!-- Quiz Max Vals -->
+        <TextView
+            android:text="@string/default_quiz_grade_val_10"
+            android:layout_alignBaseline="@id/editTextLecQuiz1"
+            style="@style/LectureQuizMaxValStyle"/>
+
+        <TextView
+            android:text="@string/default_quiz_grade_val_10"
+            android:layout_alignBaseline="@id/editTextLecQuiz2"
+            style="@style/LectureQuizMaxValStyle"/>
+
+        <TextView
+            android:text="@string/default_quiz_grade_val_10"
+            android:layout_alignBaseline="@id/editTextLecQuiz3"
+            style="@style/LectureQuizMaxValStyle"/>
+
+        <TextView
+            android:text="@string/default_quiz_grade_val_10"
+            android:layout_alignBaseline="@id/editTextLecQuiz4"
+            style="@style/LectureQuizMaxValStyle"/>
+
+        <TextView
+            android:text="@string/default_quiz_grade_val_10"
+            android:layout_alignBaseline="@id/editTextLecQuiz5"
+            style="@style/LectureQuizMaxValStyle"/>
+
+        <TextView
+            android:text="@string/default_quiz_grade_val_10"
+            android:layout_alignBaseline="@id/editTextLecQuiz6"
+            style="@style/LectureQuizMaxValStyle"/>
+
+        <TextView
+            android:text="@string/default_quiz_max_val_12"
+            android:layout_alignBaseline="@id/editTextLecQuiz7"
+            style="@style/LectureQuizMaxValStyle"/>
+
+        <TextView
+            android:text="@string/default_quiz_grade_val_10"
+            android:layout_alignBaseline="@id/editTextLecQuiz8"
+            style="@style/LectureQuizMaxValStyle"/>
+
+        <TextView
+            android:text="@string/default_quiz_grade_val_10"
+            android:layout_alignBaseline="@id/editTextLecQuiz9"
+            style="@style/LectureQuizMaxValStyle"/>
+
+        <TextView
+            android:text="@string/default_quiz_grade_val_10"
+            android:layout_alignBaseline="@id/editTextLecQuiz10"
+            style="@style/LectureQuizMaxValStyle"/>
+
+        <TextView
+            android:text="@string/default_quiz_grade_val_10"
+            android:layout_alignBaseline="@id/editTextLecQuiz11"
+            style="@style/LectureQuizMaxValStyle"/>
+
+
+        <!-- Lecture Quiz Text Areas -->
+        <EditText
+            android:id="@+id/editTextLecQuiz1"
+            android:hint="@string/default_quiz_grade_val_10"
+            android:layout_below="@+id/textViewQuizHeader"
+            android:layout_alignLeft="@+id/editTextLecFinalExam"
+            style="@style/LectureQuizGradeStyle"/>
+
+        <EditText
+            android:id="@+id/editTextLecQuiz2"
+            android:hint="@string/default_quiz_grade_val_10"
+            android:layout_below="@+id/editTextLecQuiz1"
+            android:layout_alignLeft="@+id/editTextLecQuiz1"
+            style="@style/LectureQuizGradeStyle"/>
+
+        <EditText
+            android:id="@+id/editTextLecQuiz3"
+            android:hint="@string/default_quiz_grade_val_10"
+            android:layout_below="@+id/editTextLecQuiz2"
+            android:layout_alignLeft="@+id/editTextLecFinalExam"
+            style="@style/LectureQuizGradeStyle"/>
+
+        <EditText
+            android:id="@+id/editTextLecQuiz4"
+            android:hint="@string/default_quiz_grade_val_10"
+            android:layout_below="@+id/editTextLecQuiz3"
+            android:layout_alignLeft="@+id/editTextLecFinalExam"
+            style="@style/LectureQuizGradeStyle"/>
+
+        <EditText
+            android:id="@+id/editTextLecQuiz5"
+            android:hint="@string/default_quiz_grade_val_10"
+            android:layout_below="@+id/editTextLecQuiz4"
+            android:layout_alignLeft="@+id/editTextLecFinalExam"
+            style="@style/LectureQuizGradeStyle"/>
+
+        <EditText
+            android:id="@+id/editTextLecQuiz6"
+            android:hint="@string/default_quiz_grade_val_10"
+            android:layout_below="@+id/editTextLecQuiz5"
+            android:layout_alignLeft="@+id/editTextLecFinalExam"
+            style="@style/LectureQuizGradeStyle"/>
+
+        <EditText
+            android:id="@+id/editTextLecQuiz7"
+            android:hint="@string/default_quiz_grade_val_12"
+            android:layout_below="@+id/editTextLecQuiz6"
+            android:layout_alignLeft="@+id/editTextLecFinalExam"
+            style="@style/LectureQuizGradeStyle"/>
+
+        <EditText
+            android:id="@+id/editTextLecQuiz8"
+            android:hint="@string/default_quiz_grade_val_10"
+            android:layout_below="@+id/editTextLecQuiz7"
+            android:layout_alignLeft="@+id/editTextLecFinalExam"
+            style="@style/LectureQuizGradeStyle"/>
+
+        <EditText
+            android:id="@+id/editTextLecQuiz9"
+            android:hint="@string/default_quiz_grade_val_10"
+            android:layout_alignLeft="@+id/editTextLecQuiz8"
+            android:layout_below="@+id/editTextLecQuiz8"
+            style="@style/LectureQuizGradeStyle"/>
+
+        <EditText
+            android:id="@+id/editTextLecQuiz10"
+            android:hint="@string/default_quiz_grade_val_10"
+            android:layout_alignLeft="@+id/editTextLecFinalExam"
+            android:layout_below="@+id/editTextLecQuiz9"
+            style="@style/LectureQuizGradeStyle"/>
+
+        <EditText
+            android:id="@+id/editTextLecQuiz11"
+            android:hint="@string/default_quiz_grade_val_10"
+            android:layout_alignLeft="@+id/editTextLecFinalExam"
+            android:layout_below="@+id/editTextLecQuiz10"
+            style="@style/LectureQuizGradeStyle"/>
+
+        <TextView
+            android:id="@+id/textViewAttendanceHeader"
+            android:text="@string/title_sub_lec_attendance"
+            android:layout_below="@+id/editTextLecQuiz11"
+            android:layout_alignLeft="@+id/textViewExamsHeader"
+            style="@style/MainGradeSubHeaders"/>
+
+        <TextView
+            android:text="@string/label_lec_days_missed"
+            android:layout_alignRight="@+id/textViewLabelFinalExam"
+            android:layout_alignBaseline="@+id/editTextLecDaysMissed"
+            android:textSize="14sp"
+            style="@style/MainGradeText"/>
+
+        <EditText
+            android:id="@+id/editTextLecDaysMissed"
+            android:hint="@string/default_attendance_val"
+            android:layout_below="@+id/textViewAttendanceHeader"
+            android:layout_alignLeft="@+id/editTextLecFinalExam"
+            style="@style/LectureQuizGradeStyle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:id="@+id/textViewAvgExamGrade"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Avg Exam Grade"
+            android:id="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="4dp"
+            android:layout_toLeftOf="@+id/textViewAvgExamGrade"/>
+    </RelativeLayout>
+</ScrollView>
